@@ -1,0 +1,172 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --Primary-Strong-Cyan: hsl(171, 66%, 44%);
+    --Neon-light-blue: #04c5e7;
+    --Neon-dark-blue: #004c59;
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --heart-red: #e81224;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* XLarge */
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px;
+    }
+}
+
+.container {
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #010101;
+    min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background-image: url("../imgs/wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+
+}
+
+header {
+    min-height: 80px;
+    width: 100%;
+    height: 150px;
+}
+
+header .container {
+    position: relative;
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .title {
+    cursor: url(https://cdn.custom-cursor.com/db/10232/32/starter-fire-cursor.png), default !important;
+    color: var(--Neon-light-blue);
+    font-size: 40px;
+}
+
+.links {
+    width: 100%;
+    height: calc(100vh - 180px);
+    display: flex;
+}
+
+.links .container {
+    justify-self: center;
+    align-self: center;
+}
+
+a:nth-child(2) {
+    margin: 20px auto;
+}
+
+a {
+    position: relative;
+    min-width: 150px;
+    max-width: 230px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--Neon-light-blue);
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: large;
+    transition: 0.2s;
+    color: var(--Neon-light-blue);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+a::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 0;
+    height: 0;
+    background-color: var(--Neon-dark-blue);
+    transform: rotate(30deg);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    box-shadow: 0 0 0 0 rgb(29, 82, 255);
+    border-radius: 50%;
+
+}
+
+a:hover {
+    box-shadow: 0px 0px 13px 0px rgb(0 39 255);
+    color: rgb(168, 255, 255);
+
+}
+
+a:hover::before {
+    width: 1px;
+    height: 1px;
+    box-shadow: 0 0 100px 300px rgb(29, 82, 255);
+}
+
+a i {
+    margin-right: 8px;
+}
+
+@media (max-width: 640px) {
+    header .title {
+        font-size: 30px;
+    }
+
+    body {
+        background-image: url("../imgs/wallpaperflare.com_wallpaper-m.jpg");
+        backdrop-filter: blur(2px);
+    }
+}

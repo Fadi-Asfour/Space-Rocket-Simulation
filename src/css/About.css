@@ -1,0 +1,236 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --Primary-Strong-Cyan: hsl(171, 66%, 44%);
+    --Neon-light-blue: #04c5e7;
+    --Neon-dark-blue: #004c59;
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --heart-red: #e81224;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* XLarge */
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px;
+    }
+}
+
+.container {
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #010101;
+    min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background-image: url("../imgs/wallpaperflare.com_wallpaper-about-side.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: wheat;
+    backdrop-filter: grayscale(10);
+}
+
+header {
+    min-height: 80px;
+    width: 100%;
+    height: 150px;
+}
+
+header .container {
+    position: relative;
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .title {
+    cursor: url(https://cdn.custom-cursor.com/db/10232/32/starter-fire-cursor.png), default !important;
+    color: var(--Neon-light-blue);
+    font-size: 40px;
+}
+
+.parg {
+    width: 100%;
+}
+
+.parg .container {
+    padding: 0 22px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parg .container p {
+    text-align: center;
+    color: var(--Neon-light-blue);
+    max-width: 750px;
+    font-size: 20px;
+}
+
+.contributors {
+    position: relative;
+    text-align: center;
+    color: var(--Neon-light-blue);
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.contributors .container p {
+    margin: auto;
+    width: fit-content;
+    position: relative;
+}
+
+.contributors .container p::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+    position: absolute;
+    background-color: var(--Neon-light-blue);
+}
+
+.contributors .container p::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    background-color: var(--Neon-light-blue);
+}
+
+.team {
+    margin: 80px 0 0;
+}
+
+.team .container {
+    display: grid;
+    row-gap: 80px;
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+    position: relative;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.team .container .cont {
+    display: inline;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 8px;
+    min-width: 200px;
+    color: var(--Neon-light-blue);
+    text-align: center;
+    padding: 15px;
+    background-color: #002b3327;
+    transition: 0.13s;
+    width: 225px;
+    height: 235px;
+}
+
+.team .container .cont:hover {
+    background-color: #002b3369;
+    transform: scale(1.07, 1.07);
+    box-shadow: 0 0 15px 3px #04c5e744;
+}
+
+.team .container .cont img {
+    margin-bottom: 16px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+.team .container .cont ul {
+    margin: 16px 0;
+}
+
+.team .container .cont .name {
+    font-size: 20px;
+}
+
+.team .container .cont ul li {
+    display: inline;
+}
+
+.team .container .cont ul li:nth-child(2) {
+    margin: 0 8px;
+}
+
+.team .container .cont ul li a i {
+    color: var(--Neon-light-blue);
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+.team .container .cont ul li a:hover i {
+    text-shadow: 0 0 5px #04c5e786;
+}
+
+.thx {
+    color: var(--Neon-light-blue);
+    text-align: center;
+    font-size: 76px;
+    margin: 150px 0 20px;
+}
+
+@media (max-width: 640px) {
+    header .title {
+        font-size: 25px;
+    }
+
+    .team .container {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+
+    .thx {
+        font-size: 30px;
+    }
+}

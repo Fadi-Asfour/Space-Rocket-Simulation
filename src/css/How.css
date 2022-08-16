@@ -1,0 +1,74 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --Primary-Strong-Cyan: hsl(171, 66%, 44%);
+    --Neon-light-blue: #04c5e7;
+    --Neon-dark-blue: #004c59;
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --heart-red: #e81224;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* XLarge */
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px;
+    }
+}
+
+.container {
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #010101;
+    min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background-image: url("../imgs/wallpaperflare.com_wallpaper-about-side.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: wheat;
+    backdrop-filter: grayscale(10);
+}

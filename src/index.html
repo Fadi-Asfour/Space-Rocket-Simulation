@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="http://172.31.192.1:5555/images/favico.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>SRC</title>
+</head>
+
+<body>
+    <div id="fps"> </div>
+    <FS class="f-screem">
+        <canvas class="webgl">
+
+        </canvas>
+        <div class="time">
+            Time : <span id="time-value">0</span> <span class="S">S</span>
+        </div>
+
+        <div class="Throttle">
+            <div class="container">
+                Throttle <span id="Throttle-value" style="display: block;"> 0 </span>
+            </div>
+        </div>
+        <div class="info">
+            <div class="speed-info infos">
+                <div class="speed">Velocity : <span id="speed-value">0 </span> <span class="unit">m.s
+                        <sup>-1</sup></span>
+                </div>
+                <div class="max-speed">Max Velocity : <span id="max-speed-value">0 </span> <span class="unit">m.s
+                        <sup>-1</sup></span>
+                </div>
+                <div class="Acc">Acc : <span id="Acc-value">0 </span> <span class="unit">m.s
+                        <sup>-2</sup></span>
+                </div>
+            </div>
+            <div class="rocket-info infos">
+                <div class="mass">Mass : <span id="mass-value"> 0 </span> <span class="unit"> T </span></div>
+                <div class="thrust">Thrust : <span id="thrust-value"> 0 </span><span class="unit"> TN </span></div>
+                <div class="thrust-to-weight">Thrust / Weight : <span id="thrust-to-weight-value"> 0.00 </span>
+                </div>
+            </div>
+            <div class="height-info infos">
+                <div class="height">Height : <span id="height-value"> 0 </span> <span class="unit">m</span>
+                </div>
+                <div class="max-height">Max Height : <span id="max-height-value"> 0 </span> <span class="unit">m</span>
+                </div>
+                <div class="current-x">Current X : <span id="X-value"> 0 </span> <span class="unit">m</span>
+                </div>
+            </div>
+            <div class="general-info infos">
+                <div class="Drag">Drag : <span id="Drag-value"> 0 </span> <span class="unit">N</div>
+                <div class="Lift">Lift : <span id="lift-value"> 0 </span> <span class="unit">N</div>
+                <div class="Weight">Weight : <span id="Weight-value">0 </span> <span class="unit">TN
+                    </span>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="fuel-info infos">
+                <div class="amount">Fuel Amount : <span id="amount-value"> 0 </span> <span class="unit">Kg</div>
+                <div class="amount-left">Amount Left : <span id="amount-left-value"> 0 </span> <span class="unit">Kg
+                </div>
+                <div class="power">Power : <span id="power-value"> 0 </span> <span class="unit">N</div>
+
+            </div>
+            <div class="Phicics infos">
+                <div class="Gravity">Gravity : <span id="gravity-value">9.81</span> <span class="unit">m.s
+                        <sup>-2</sup></span>
+                </div>
+            </div>
+            <div class="Escape infos">
+                <div class="fall-x">Fall X : <span id="fall-x-value"> 0 </span> <span class="unit"></span>
+                </div>
+                <div class="isEsc" id="isEscape">Escaped Earth</div>
+            </div>
+    </FS>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Buran Energia Launchpad
+* source:	https://sketchfab.com/3d-models/buran-energia-launchpad-357d6577a06d4f559c9bd93bcb66f1e4
+* author:	Soviet Model Magic (https://sketchfab.com/mckadefasel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Buran Energia Launchpad" (https://sketchfab.com/3d-models/buran-energia-launchpad-357d6577a06d4f559c9bd93bcb66f1e4) by Soviet Model Magic (https://sketchfab.com/mckadefasel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
